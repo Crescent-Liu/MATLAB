@@ -3,13 +3,12 @@ format compact
 format long
 a=0;
 b=1;
-%设定求根区间
-r=1;
-%r=b-a
+%璁惧畾姹傛牴鍖洪棿
+r=(b-a)/2;
 n=0;
-while r>=(1/2)*10^(-3)%设定精度
+while r>=(1/2)*10^(-3)%璁惧畾绮惧害
     n=n+1;
-    r=r*1/2;%r=r*求根区间宽度/2
+    r=r/2;%r=r/2
     ya=func(a);
     c=(a+b)/2;
     yc=func(c);
